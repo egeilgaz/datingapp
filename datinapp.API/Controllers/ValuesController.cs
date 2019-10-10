@@ -20,7 +20,7 @@ namespace datinapp.API.Controllers
             _context = context;
 
         }
-        // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
@@ -31,7 +31,7 @@ namespace datinapp.API.Controllers
 
         [AllowAnonymous]
         [HttpGet("{id}")]
-        public async Task< ActionResult> GetValue(int id)
+        public async Task<IActionResult> GetValue(int id)
         {
             var values = await _context.Values.FirstOrDefaultAsync(x => x.Id == id);
             return Ok(values);
