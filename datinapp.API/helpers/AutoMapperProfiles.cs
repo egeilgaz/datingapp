@@ -2,6 +2,7 @@ using System.Linq;
 using AutoMapper;
 using datinapp.API.Dtos;
 using datinapp.API.models;
+using DatingApp.API.Dtos;
 
 namespace datinapp.API.helpers
 {
@@ -20,6 +21,7 @@ namespace datinapp.API.helpers
                 .ForMember(dest => dest.Age, opt => 
                     opt.MapFrom(src => src.DateOfBirth.CalculateAge()));
             CreateMap<Photo, PhotosForDetailedDto>();
+            CreateMap<UserForUpdateDto,User>();
            
         }
     }
