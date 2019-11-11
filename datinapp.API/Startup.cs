@@ -61,6 +61,7 @@ namespace datinapp.API
                         ValidateAudience = false
                     };
                 });
+            services.AddScoped<LogUserActivity>();
 
         }
 
