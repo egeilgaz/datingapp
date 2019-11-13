@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using datinapp.API.Data;
 using datinapp.API.helpers;
+using DatingApp.API.Data;
 using DatingApp.API.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;

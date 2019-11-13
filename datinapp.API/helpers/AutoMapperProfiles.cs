@@ -3,6 +3,7 @@ using AutoMapper;
 using datinapp.API.Dtos;
 using datinapp.API.models;
 using DatingApp.API.Dtos;
+using DatingApp.API.Helpers;
 
 namespace datinapp.API.helpers
 {
